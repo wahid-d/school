@@ -1,3 +1,4 @@
+from typing import Tuple
 from Models.Person import Person
 
 class Student(Person):

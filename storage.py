@@ -45,13 +45,13 @@ class Storage:
 
     def search(self, query):
         command = """
-        
+
         """
 
     def __createStudentsTable(self):
         command = """
         CREATE TABLE students(
-            id integer primary key autoincrement,
+            id char(64) primary key,
             firstname char(255),
             lastname char(255),
             phone char(20),
@@ -66,7 +66,7 @@ class Storage:
     def __createTeachersTable(self):
         command = """
         CREATE TABLE teachers(
-            id integer primary key autoincrement,
+            id char(64) primary key,
             firstname char(255),
             lastname char(255),
             phone char(20),

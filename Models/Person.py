@@ -1,6 +1,8 @@
+import uuid
+
 class Person:
     def __init__(self, fname, lname, bdate, phone, email):
-        self.id = ''
+        self.id = str(uuid.uuid4())
         self.firstname = fname
         self.lastname = lname
         self.birthdate = bdate
